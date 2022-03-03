@@ -29,6 +29,7 @@ int main(int argc, char *argv[]) {
   string name = argv[0];
   name = getName(name);
   string env = getenv("FASTCMD_HOME");
+  cout << env << endl;
   ifstream file(env + "\\" + name + ".txt");
   string line;
   getline(file, line);
