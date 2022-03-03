@@ -1,2 +1,3 @@
 .idea
 .fastcmd
+*/__pycache__/
