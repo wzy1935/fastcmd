@@ -1,4 +1,5 @@
 .idea
 .fastcmd
 */__pycache__/
+!install.bat
 *.bat

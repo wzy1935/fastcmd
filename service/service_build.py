@@ -7,7 +7,8 @@ def up():
     if not os.path.exists('./.fastcmd'):
         os.mkdir('./.fastcmd')
     with open('./fastcmd_load.bat', mode='w+') as f:
-        f.write(f'set Path={env}\n\nset FASTCMD_HOME={os.getcwd()}\\.fastcmd')
+        f.write(f'set Path={env}')
+        # \n\nset FASTCMD_HOME={os.getcwd()}\\.fastcmd
 
 def down():
     os.remove('./.fastcmd')

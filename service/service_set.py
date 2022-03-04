@@ -8,6 +8,6 @@ def set(is_local, shortcut, prefix):
     prefix = prefix.replace('?/', os.getcwd() + '/')
     prefix = prefix.replace('?\\', os.getcwd() + '\\')
     prefix = prefix.replace('\'', '\"')
-    shutil.copy(file_path + '/resource/base.exe', path + '/.fastcmd/' + shortcut + '.exe')
+    shutil.copy(file_path + '/resources/base.exe', path + '/.fastcmd/' + shortcut + '.exe')
     with open(path + '/.fastcmd/' + shortcut + '.txt', mode='w+') as f:
         f.write(prefix)

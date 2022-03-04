@@ -1,3 +1,3 @@
-import sys
+import os
 
-file_path = sys.path[0]
+file_path = os.path.dirname(os.path.abspath(__file__))

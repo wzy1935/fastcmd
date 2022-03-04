@@ -1,6 +1,5 @@
-from service import build, list, service, set
+from service import service_build, service_list, service_service, service_set
 
-# service.up()
-# set.set(True, 'jvav', 'java')
-# list.list(True,True)
-build.up()
+# service_set.set(False, "rebase", "g++ -o ?/resources/base ?/args_forward.cpp")
+
+service_set.set(False, "fastcmd", "python ?/main.py")

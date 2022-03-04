@@ -1,5 +1,4 @@
 from pathtub import add_to_path, remove_from_path
-from py_setenv import setenv
 from config import *
 
 
@@ -13,7 +12,7 @@ def up():
     else:
         print('Setting...')
         add_to_path(file_path + "\\.fastcmd", mode='user')
-        setenv('FASTCMD_HOME', file_path + "\\.fastcmd", user=True, suppress_echo=True)
+        # setenv('FASTCMD_HOME', file_path + "\\.fastcmd", user=True, suppress_echo=True)
         print('Done. You may need to restart your computer to start the service.')
 
 
@@ -26,5 +25,5 @@ def down():
     else:
         print('Setting...')
         remove_from_path(file_path + "\\.fastcmd", mode='user')
-        setenv('FASTCMD_HOME', user=True, delete=True, suppress_echo=True)
+        # setenv('FASTCMD_HOME', user=True, delete=True, suppress_echo=True)
         print('Done.')
